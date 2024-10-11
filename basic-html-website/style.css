@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2 {
+    font-family: "Caveat", cursive;
+    font-weight: 800;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.dev-profile img {
+    width: 4.4rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+}
+
+.dev-profile span {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    padding: 2.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.divider {
+    width: 0.2rem;
+    height: 2.0rem;
+    border-radius: 2.5rem;
+    background-color: black;
+    transform: rotate(20deg);
+}
+
+.hero-page {
+    text-align: center;
+    margin: 3.0rem 0;
+}
+
+.hero-page h1 {
+    font-size: 3.5rem;
+}
+
+.hero-page p {
+    color: gray;
+}
+
+.project-section {
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    text-align: center;
+}
+
+h2 {
+    margin: 1.2rem;
+
+}
+
+.project-section li {
+    padding: 1.0rem 0;
+    border-top: 0.2rem solid black;
+    background-color: gainsboro;
+}
+
+.work-experience__section h2 {
+    text-align: center;
+}
+
+.work-experience__section h3 {
+    font-family: "Caveat", cursive;
+}
+
+.work-experience__section a {
+    margin-top: 1.2rem;
+    color: blue;
+}
+
+.work-experience__section article {
+    padding: 2.0rem 1.2rem;
+    background-color: gainsboro;
+}
+
+.roadmap-card {
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+}
+
+.opensource-card {
+    border-bottom: 0.2rem solid black;
+}
+
+.education-section {
+    padding: 1.2rem;
+    border-bottom: 0.2rem solid black;
+}
+
+.teacher-section {
+    padding: 1.2rem;
+}
+
+.comment-group {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teacher-comment__card {
+    max-width: 29.94rem;
+    border: 0.18rem solid black;
+    border-radius: 1.6rem;
+    padding: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.teacher-details {
+    color: gray;
+    margin-top: 1.2rem;
+}
+
+footer {
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .project-section li {
+        background-color: transparent;
+    }
+}
