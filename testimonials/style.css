@@ -1,0 +1,219 @@
+html {
+    font-size: 62.5%;
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    background-color: whitesmoke;
+    display: grid;
+    place-content: center;
+}
+
+#app {
+    max-width: 752px;
+    margin: 2.0rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.first-dev,
+.second-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.first-dev .black {
+    position: relative;
+}
+
+.black {
+    background-color: #1e1e1e;
+    color: whitesmoke;
+    border-radius: 2.0rem;
+    padding: 1.8rem;
+}
+
+.first-dev .black::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1.0rem;
+    border-style: solid;
+    border-width: 25px 20px 0 20px;
+    border-color: #1e1e1e transparent transparent  transparent;
+}
+
+.dev-details {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.dev-avatar {
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.dev-name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.dev-title {
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.border {
+    border: 0.25rem solid black;
+    border-radius: 2.0rem;
+    padding: 1.2rem;
+}
+
+.second-dev {
+    gap: 3.0rem;
+}
+
+.third-dev {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.ratings {
+    margin-bottom: 1.2rem;
+}
+
+ion-icon {
+    font-size: 2.8rem;
+    color: hsl(47.95deg 98.35% 47.65%);
+}
+
+.thirdDev-name {
+    font-size: 3.2rem;
+    margin-bottom: 1.0rem;
+}
+
+.thirdDev-avatar {
+    border-radius: 2.0rem;
+}
+
+.thirdDev-details {
+    padding: 2.2rem;
+}
+
+.thirdDev-title {
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.dev-comp {
+    text-align: center;
+}
+
+.participants {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem auto 1.5rem;
+}
+
+.participants ion-icon {
+    color: #1e1e1e;
+}
+
+.part-avatar {
+    width: 5.0rem;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1.1) translatey(-0.8rem);
+}
+
+.participants button {
+    position: absolute;
+}
+
+.prev {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: -4.5rem;
+}
+
+.next {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: -4.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 2.0rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .third-dev {
+        grid-column: 1 / 3;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .dev-comp {
+        grid-column: 1 / 3;
+    }
+
+    .thirdDev-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
