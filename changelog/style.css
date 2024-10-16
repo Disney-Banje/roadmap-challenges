@@ -1,0 +1,154 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../testimonials/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    display: block;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    color: #1e1e1e;
+    background-color: whitesmoke;
+}
+
+#app {
+    border: 0.1rem solid #1e1e1e;
+    border-radius: 2.5rem;
+    margin: 2.2rem;
+}
+
+main {
+    /* margin: 2.5rem; */
+}
+
+h1 {
+    font-size: 3.8rem;
+    margin: 1.8rem 2.2rem;
+}
+
+.sub-title {
+    color: gray;
+    margin: 0 2.2rem;
+}
+
+h1,
+.sub-title {
+    text-align: center;
+}
+
+.log-historic {
+    padding: 6.5rem 2.5rem;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.log-historic::after {
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    left: 0.8rem;
+    width: 0.18rem;
+    height: 90%;
+    background-color: #1e1e1e;
+    border-radius: 0.8rem;
+}
+
+.log-historic article::after {
+    content: '';
+    position: absolute;
+    width: 1.0rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    top: 0.5rem;
+    left: -2.1rem;
+    z-index: 100;
+}
+
+
+.log-historic article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.0rem;
+    align-items: center;
+}
+
+.entry-date {
+    color: gray;
+}
+
+.entry-title {
+    font-weight: 600;
+}
+
+.cta {
+    font-weight: 600;
+    background-color: #1e1e1e;
+    border-radius: 1.0rem;
+    padding: 1.2rem 2.4rem;
+    margin: 0 auto 2.5rem;
+}
+
+.cta:hover {
+    color: orange;
+}
+
+@media screen and (min-width: 768px) {
+
+    .log-historic {
+        position: relative;
+    }
+
+    .log-historic article {
+        grid-template-columns: 1fr 2fr;
+        gap: 3.8rem;
+        align-items: center;
+    }
+
+    .log-historic::after {
+        top: 4.5rem;
+        left: 31.5%;
+        width: 0.18rem;
+        height: 80%;
+    }
+
+    .log-historic article::after {
+        content: '';
+        position: absolute;
+        width: 1.0rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background-color: #1e1e1e;
+        left: 29.2%;
+        z-index: 100;
+    }
+}
