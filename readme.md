@@ -6,3 +6,4 @@ This is a compilation of the completed roadmap frontend challenges.
 
 1. Basic HTML Website [URL-Click here](https://roadmap.sh/projects/basic-html-website)
 2. Testimonial Cards [URL-Click here](https://roadmap.sh/projects/testimonial-cards)
+3. Changelog Component [URL-Click here](https://roadmap.sh/projects/changelog-component);
